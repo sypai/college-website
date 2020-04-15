@@ -1,0 +1,29 @@
+.institute-body-container{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 1.5rem;
+    background-color: $color-2;
+    box-shadow: 0 1px 20px -8px rgba(0,0,0,.41);
+    border-radius: 8px;
+    text-align: justify;
+    max-height: 100%;
+
+    img{
+        width: 100%;
+        height: 60%;
+    }
+}
+
+.institute-body-container.arrow-top:after {
+    content: " ";
+    position: absolute;
+    left: 175px;
+    top: -15px;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid $color-4;
+  }

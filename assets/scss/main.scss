@@ -1,5 +1,19 @@
-$primary-color: #444;
+@import "config";
+@import "1-home/home-root";
+@import "2-accounts/accounts-index";
+
+*{
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0 !important;
+}
 
 body {
-  background: $primary-color;
+    margin: 0;
+    background: $color-1;
+    color: $color-3;
 }
+
+@import "0-mobile/mobile-index";

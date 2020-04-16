@@ -36,6 +36,10 @@
                     animation-delay: 1s;
                 }
 
+                &:nth-of-type(4){
+                    animation-delay: 1.25s;
+                }
+
                 i{
                     position: absolute;
                     transform: translate( -6px , 0 );

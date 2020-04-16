@@ -299,7 +299,7 @@
   .institute-body-container .home-img {
     height: 40vh;
     border-radius: 4px;
-    background: url("assets/img/gec.jpg") no-repeat center center/cover; }
+    background: url("../img/gec.jpg") no-repeat center center/cover; }
     .institute-body-container .home-img .overlay {
       content: "";
       width: 100%;

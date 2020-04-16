@@ -1,29 +1,90 @@
-.contact-body-container{
-    margin-top: 30px;
-    margin-bottom: 100px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding: 1.5rem;
-    background-color: $color-2;
-    box-shadow: 0 1px 20px -8px rgba(0,0,0,.41);
-    border-radius: 8px;
-    text-align: justify;
-    max-height: 100%;
+.contact-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
 
-    img{
-        width: 100%;
-        height: 60%;
+    .contact-body-container{
+        margin-top: 10rem;
+        margin-bottom: 100px;
+        width: 80%;
+        height: 100%;
+        // position: relative;
+        
+        .contact-card{
+            padding: 1.5rem;
+            background-color: $color-1;
+            box-shadow: 0 1px 20px -8px rgba(0,0,0,.41);
+            border-radius: 8px;
+            border-left: 4px solid $color-4;
+            text-align: justify;
+            max-height: 100%;
+    
+            font-family: 'Open Sans', sans-serif;
+            padding: 1rem 1.5rem;
+            
+            .head{
+                font-size: 2rem;
+                p{
+                    margin-top: 0.5rem;
+                    font-size: 1rem;
+                    line-height: 1.25rem;
+                    color: #777;
+                }
+            }
+    
+            .contact-form{
+                margin-top: 2rem;
+                display: block;
+                text-align: left;
+    
+                .form-elems{
+                    position: relative;
+
+                    label{
+                        font-weight: 500;
+                        font-size: 1.2rem;
+                    }
+                    
+                    input{
+                        background: $color-2;
+                        border: none;
+                        margin-bottom: 2rem;
+                        padding: 1rem;
+                        box-shadow: 0 1px 20px -8px rgba(0,0,0,.41);
+                    }
+
+                    select{
+                        display: block;
+                        background: $color-2;
+                        border: none;
+                        padding: 0.5rem;
+                        box-shadow: 0 1px 20px -8px rgba(0,0,0,.41);
+                        width: 50%;
+                        font-family: 'Open Sans', sans-serif;
+                        margin-bottom: 2rem;
+                        color: #555;
+                        
+                    }
+    
+                    textarea{
+                        display: block;
+                        background: $color-2;
+                        border: none;
+                        padding: 1rem;
+                        box-shadow: 0 1px 20px -8px rgba(0,0,0,.41);
+                        width: 100%;
+                        height: 100px;
+                        margin-bottom: 1rem;
+                    }
+
+                    .dark-btn{
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
-}
-
-.contact-body-container.arrow-top:after {
-    content: " ";
-    position: absolute;
-    left: 485px;
-    top: -15px;
-    border-top: none;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    border-bottom: 15px solid $color-4;
 }

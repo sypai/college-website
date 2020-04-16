@@ -2,7 +2,7 @@
     margin-top: 30px;
     margin-bottom: 100px;
     width: 100%;
-    height: 100%;
+    height: auto;
     position: relative;
     padding: 1.5rem;
     background-color: $color-2;
@@ -10,10 +10,218 @@
     border-radius: 8px;
     text-align: justify;
     max-height: 100%;
+    
 
-    img{
-        width: 100%;
-        height: 60%;
+.accordion{
+        ul{
+            list-style: none;
+            perspective: 900;
+            padding: 0;
+            margin: 0;
+            height: auto;
+
+            li{
+                position: relative;
+                @include flipIn;
+
+                &:nth-of-type(1){
+                    animation-delay: 0.5s;
+                }
+
+                &:nth-of-type(2){
+                    animation-delay: 0.75s;
+                }
+
+                &:nth-of-type(3){
+                    animation-delay: 1s;
+                }
+
+                i{
+                    position: absolute;
+                    transform: translate( -6px , 0 );
+                    margin-top: 8px;
+                    right: 20px;
+
+                    &:before , &:after{
+                        content: "";
+                        @include transition;
+                        position: absolute;
+                        background-color: $color-4;
+                        width: 4px;
+                        height: 10px;
+                    }
+                        
+                    &:before{
+                        transform: translate( -2px , 0 ) rotate( 45deg );
+                    }
+                        
+                    &:after{
+                        transform: translate( 2px , 0 ) rotate( -45deg );
+                    }
+                }
+
+                p{
+                    position: relative;
+                    margin: 0;
+                    overflow: hidden;
+                    height: auto;
+                    @include transition;
+                    opacity: 1;
+                    transform: translate( 0 , 0 )  ;
+                    z-index: 2;
+                }
+
+                div{
+                    position: relative;
+                    margin: 0;
+                    overflow: hidden;
+                    height: auto;
+                    @include transition;
+                    opacity: 1;
+                    transform: translate( 0 , 0 )  ;
+                    z-index: 2;
+                }
+
+                input[type=checkbox]{
+                    position: absolute;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+                    z-index: 1;
+                    opacity: 0;
+
+                    &:checked{
+                        &~p{
+                            margin-top: 0;
+                            max-height: 0;
+                            opacity: 0;
+                            transform: translate(0, 50%);
+                        }
+
+                        &~div{
+                            margin-top: 0;
+                            max-height: 0;
+                            opacity: 0;
+                            display: none;
+                            transform: translate(0, 50%);
+                        }
+
+                        &~i{
+                            &:before{
+                            transform: translate( 2px , 0 ) rotate( 45deg );
+                            }
+                          
+                          &:after{
+                            transform: translate( -2px , 0 ) rotate( -45deg );
+                          }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dep-detail{
+        margin-top: 2rem;
+        font-family: 'Open Sans', sans-serif;
+
+        ul{
+            li{
+                position: relative;
+                background: $color-2;
+                border-left: 4px solid $color-4;
+                padding: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 4px;
+                margin-bottom: 2rem;
+                box-shadow: 0 1px 20px -8px rgba(0,0,0,0.21);
+
+                font-size: 1.1rem;
+                line-height: 1rem;
+                font-weight: 400;
+                font-family: 'Open Sans', sans-serif;
+                color: $color-7;
+
+                h2{
+                    font-size: 1.1rem;
+                    line-height: 1rem;
+                    font-weight: 800;
+                    border: 0;
+                    padding-top: 8px;
+                }
+
+                p{
+                    
+                    .acc-head{
+                        margin-top: 1rem;
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                        line-height: 1.2rem;
+                    }
+
+                    .acc-text{
+                        padding-left: 1rem;
+                    
+                        margin-top: 8px;
+                        display: block;
+                        line-height: 1.2rem;
+                        margin-bottom: 8px;
+                    }
+                }
+
+            
+                .faculty-details{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    border: none;
+                    position: relative;
+                    transition: all 0.5s ease-in-out;
+
+                    &:hover{
+                        box-shadow: 0 1px 20px -8px rgba(0,0,0,.41);
+                        -webkit-transform: translate(0px, -8px);
+                        -ms-transform: translate(0px, -8px);
+                        transform: translate(0px, -8x);
+                    }
+
+                    .card-body{
+                        .card-img{
+                            padding: 4rem;
+                            padding-bottom: 1rem;
+                            img{
+                                border-radius: 100%;
+                                filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.4));
+                            }
+                        }
+
+                        .card-title{
+                            position: absolute;
+                            top: 340px;
+                            right: 90px;
+                            cursor: pointer;
+                        }
+
+                        .card-text{
+                            .faculty-name{
+                                font-size: 1.2rem;
+                                line-height: 1rem;
+                                font-weight: 800;
+                                margin-bottom: 0.5rem;
+                                border: 0;
+                                padding-top: 8px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
     }
 }
 

@@ -10,6 +10,12 @@ $color-3: #000;
 $color-4: #fa9950cc;
 $color-5: #f30000;
 $color-6: #0f3fca;
+$color-7: #3a3a3a;
+$color-8: #240fca;
+$white: rgba(254,255,250,1);
+$grey: rgba(220,231,235,1);
+$red: rgba(255,104,115,1);
+$black: rgba(48,69,92,0.8);
 // $color-4: #ec8234a3;
 
 @mixin easeOut{
@@ -18,6 +24,36 @@ $color-6: #0f3fca;
 
 @mixin easeInOut{
     transition: all 0.3s ease-in-out;
+}
+@mixin transition {
+    transition: all 0.5s ease-in-out;
+}
+@mixin flipIn{
+    animation: flipdown 0.5s ease both;
+}
+
+@keyframes flipdown{
+    0%{
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+    }
+    5%{
+        opacity: 1;
+    }
+    80%{
+        transform: rotateX(8deg);
+    }
+    83%{
+        transform: rotateX(6deg);
+    }
+    92%{
+        transform: rotateX(-3deg);
+    }
+    100%{
+        transform-origin: top center;
+        transform: rotateX(0deg) ;
+    }
 }
 
 .dark-btn{

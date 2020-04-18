@@ -1,7 +1,32 @@
-window.addEventListener('resize', function () { 
-  "use strict";
-  window.location.reload(); 
-});
+// window.addEventListener('resize', function () { 
+//   "use strict";
+//   window.location.reload(); 
+// });
+
+// Navigation Menu
+const menuBtn = document.querySelector(".menu-btn");
+const closeBtn = document.querySelector(".close-btn");
+const menu = document.querySelector(".menu");
+const navItems = document.querySelectorAll(".nav-item0");
+
+
+menuBtn.addEventListener('click', openMenu);
+closeBtn.addEventListener('click', closeMenu);
+
+function openMenu(){ 
+  menu.classList.add("show");
+  navItems.forEach(item => item.classList.add('show'));
+
+  menuBtn.classList.add("close");
+}
+
+function closeMenu(){ 
+  menu.classList.remove("show");
+  navItems.forEach(item => item.classList.remove('show'));
+  
+  menuBtn.classList.remove("close");
+}
+
 
 // Register Form
 

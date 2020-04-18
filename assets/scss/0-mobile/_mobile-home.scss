@@ -49,8 +49,53 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-    
-  
+  .home-body-container{
+      width: 90%;
+      padding-right: 15px;
+
+      .home-info{
+        margin-bottom: 3rem;
+      }
+
+
+      .home-notice-board{
+        display: none;
+      }
+  }
+
+  .home-body-container.arrow-top:after {
+    content: " ";
+    position: absolute;
+    left: 145px;
+    top: -15px;
+  }
+
+  .mb.arrow-top:after {
+    content: " ";
+    position: absolute;
+    left: 265px;
+    top: -15px;
+  }
+
+  // Institute Page
+  .institute-body-container{
+    width: 90%;
+    margin-top: 130px;
+    padding-right: 15px;
+
+    .home-info{
+      margin-bottom: 3rem;
+    }
+
+
+    .home-notice-board{
+      display: none;
+    }
+  }
+
+  .institute-body-container.arrow-top:after {
+    display: none;
+  }
 }
 
 /* 
@@ -59,8 +104,51 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .home-container{
-        width: 100%;
+    .home-body-container{
+        width: 90%;
+        padding-right: 15px;
+
+        .home-info{
+          margin-bottom: 3rem;
+          display: block;
+        }
+
+        .home-notice-board{
+          display: none;
+        }
     }
-  
+
+    .home-body-container.arrow-top:after {
+      content: " ";
+      position: absolute;
+      left: 125px;
+      top: -15px;
+    }
+
+    .mb.arrow-top:after {
+      content: " ";
+      position: absolute;
+      left: 245px;
+      top: -15px;
+    }
+
+    // Institute Page
+    .institute-body-container{
+      width: 90%;
+      margin-top: 130px;
+      padding-right: 15px;
+
+      .home-info{
+        margin-bottom: 3rem;
+      }
+
+
+      .home-notice-board{
+        display: none;
+      }
+    }
+
+    .institute-body-container.arrow-top:after {
+      display: none;
+    }
 }

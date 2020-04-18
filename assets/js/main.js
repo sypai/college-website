@@ -1,3 +1,10 @@
+window.addEventListener('resize', function () { 
+  "use strict";
+  window.location.reload(); 
+});
+
+// Register Form
+
 $(".clicker").click(function () {
   var $btn = $(this),
     $step = $btn.parents(".card-body"),
@@ -42,18 +49,17 @@ function step1($step, $pag, stepIndex) {
 }
 
 function step3($step, $pag) {
-  console.log("3");
-
   // animate the step out
   $step.parents(".card").addClass("animate-up");
 }
 
+
+// Back-to-top Button
 var btn = $("#back-to-top");
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 200) {
     btn.addClass("show");
-    console.log("click");
   } else {
     btn.removeClass("show");
   }
@@ -61,25 +67,59 @@ $(window).scroll(function () {
 
 btn.on("click", function (e) {
   e.preventDefault();
-  console.log("click");
+
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
 
-// const logo_load = document.querySelector(".logo");
-// const home_body = document.querySelector(".home-body");
+// To Career Map Scroll
+var mapBtn = $('#careerMap')
+var homeContainer = $('.home-body-container')
 
-// $(".logo").css({"left":"500px"}).animate({"left":"0px"}, "slow");
+$('.scrollTo').click(function(){
+  mapBtn.addClass("show");
+  homeContainer.addClass("rm-mb");
 
-// function init(){
-// setTimeout(() => {
-//     logo_load.style.opacity = 0;
-//     logo_load.style.display = 'none';
+  $('html, body').animate({
+      scrollTop: $( $(this).attr('href') ).offset().top
+  }, 500);
+  return false;
+});
 
-//     home_body.style.display = 'block';
-//     setTimeout(() => (home_body.style.opacity = 1), 50);
+// // To animate the header on scroll
+
+// // Setup a timer
+// var timeout;
+
+// // Listen for resize events
+// window.addEventListener('scroll', function ( event ) {
+
+// 	// If there's a timer, cancel it
+// 	if (timeout) {
+// 		window.cancelAnimationFrame(timeout);
+// 	}
+
+//     // Setup the new requestAnimationFrame()
+// 	timeout = window.requestAnimationFrame(function () {
+
+//         // Run our scroll functions
+
+//     let scrollPosition = Math.round(window.scrollY);
     
-// }, 3000);
+//     console.log(scrollPosition);
+//     if (scrollPosition > 175){
+//       $(".header-big").addClass('close');
+//     }
+//     else {
+//       $(".header-big").removeClass('close');
 // }
 
-// init();
+//     if (scrollPosition > 280){
+//       $(".header-sm").addClass('show');
+//     }
+//     else {
+//       $(".header-sm").removeClass('show');
+//     }
 
+// });
+
+// }, false);

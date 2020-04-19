@@ -1,111 +1,112 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans|Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans|Roboto&display=swap");
 
 // Colors
-$color-1:#f6f6fd;
-$color-2:#ffffff;
+$color-1: #f6f6fd;
+$color-2: #ffffff;
 $color-3: #000;
-$color-4: #fa9950cc;
+// $color-4: #fa9950cc; //8-digit not supported
+$color-4:rgba(250, 153, 80, 0.8); 
 $color-5: #f30000;
 $color-6: #0f3fca;
 $color-7: #3a3a3a;
 $color-8: #240fca;
-$white: rgba(254,255,250,1);
-$grey: rgba(220,231,235,1);
-$red: rgba(255,104,115,1);
-$black: rgba(48,69,92,0.8);
+$white: rgba(254, 255, 250, 1);
+$grey: rgba(220, 231, 235, 1);
+$red: rgba(255, 104, 115, 1);
+$black: rgba(48, 69, 92, 0.8);
 // $color-4: #ec8234a3;
 
-@mixin easeOut{
-    transition: all 0.3s ease-in;
+@mixin easeOut {
+  transition: all 0.3s ease-in;
 }
 
-@mixin easeInOut{
-    transition: all 0.3s ease-in-out;
+@mixin easeInOut {
+  transition: all 0.3s ease-in-out;
 }
 @mixin transition {
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-@mixin flipIn{
-    animation: flipdown 0.5s ease both;
+@mixin flipIn {
+  animation: flipdown 0.5s ease both;
 }
 
-@keyframes flipdown{
-    0%{
+@keyframes flipdown {
+  0% {
     opacity: 0;
     transform-origin: top center;
     transform: rotateX(-90deg);
-    }
-    5%{
-        opacity: 1;
-    }
-    80%{
-        transform: rotateX(8deg);
-    }
-    83%{
-        transform: rotateX(6deg);
-    }
-    92%{
-        transform: rotateX(-3deg);
-    }
-    100%{
-        transform-origin: top center;
-        transform: rotateX(0deg) ;
-    }
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
 }
 
-.dark-btn{
-    background: $color-4;
+.dark-btn {
+  background: $color-4;
+  color: $color-2;
+
+  width: 200px;
+  border-radius: 0.5rem;
+  border: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  text-align: center;
+
+  cursor: pointer;
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.48);
+  outline: none;
+  @include easeInOut;
+
+  &:hover {
+    transform: translate(0px, -5px);
     color: $color-2;
-
-    width: 200px;
-    border-radius: 0.5rem;
-    border: 0;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    padding: 0.8rem 1rem;
-    
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 1rem;
-    text-align: center;
-    
-    cursor: pointer;
-    box-shadow:0 10px 10px -8px rgba(0,0,0,0.48);
-    outline: none;
-    @include easeInOut;
-
-    &:hover{
-        transform: translate(0px, -5px);
-        color: $color-2;
-    }
+  }
 }
 
-.light-btn{
-    background: $color-2;
+.light-btn {
+  background: $color-2;
+  color: $color-4;
+
+  width: 200px;
+  border-radius: 0.5rem;
+  border: 2px solid $color-4;
+  margin-bottom: 1rem;
+  padding: 0.8rem 1rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  text-align: center;
+
+  cursor: pointer;
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.48);
+
+  @include easeInOut;
+
+  &:hover {
+    transform: translate(0px, -5px);
     color: $color-4;
-
-    width: 200px;
-    border-radius: 0.5rem;
-    border: 2px solid $color-4;
-    margin-bottom: 1rem;
-    padding: 0.8rem 1rem;
-    
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 1rem;
-    text-align: center;
-    
-    cursor: pointer;
-    box-shadow:0 10px 10px -8px rgba(0,0,0,0.48);
-
-    @include easeInOut;
-
-    &:hover{
-        transform: translate(0px, -5px);
-        color: $color-4;
-        text-decoration: none;
-    }
+    text-decoration: none;
+  }
 }

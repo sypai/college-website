@@ -80,7 +80,9 @@
             .ext-link{
                 z-index: 100;
                 background: #ffffff73;
+                border: 2px solid $color-4-alt;
                 border: 2px solid $color-4;
+                color: $color-4-alt;
                 color: $color-4;
                 text-decoration: none;
                 width: 30%;
@@ -105,5 +107,6 @@
     border-top: none;
     border-right: 15px solid transparent;
     border-left: 15px solid transparent;
+    border-bottom: 15px solid $color-4-alt;
     border-bottom: 15px solid $color-4;
   }

@@ -19,6 +19,7 @@
     transform: rotateX(0deg); } }
 
 .dark-btn {
+  background: #fa9950;
   background: rgba(250, 153, 80, 0.8);
   color: #ffffff;
   width: 200px;
@@ -41,9 +42,11 @@
 
 .light-btn {
   background: #ffffff;
+  color: #fa9950;
   color: rgba(250, 153, 80, 0.8);
   width: 200px;
   border-radius: 0.5rem;
+  border: 2px solid #fa9950;
   border: 2px solid rgba(250, 153, 80, 0.8);
   margin-bottom: 1rem;
   padding: 0.8rem 1rem;
@@ -56,6 +59,7 @@
   transition: all 0.3s ease-in-out; }
   .light-btn:hover {
     transform: translate(0px, -5px);
+    color: #fa9950;
     color: rgba(250, 153, 80, 0.8);
     text-decoration: none; }
 
@@ -105,8 +109,10 @@
         color: #000;
         transition: all 0.3s ease-in; }
         .header-big .my-nav .navbar-nav a:hover {
+          color: #fa9950;
           color: rgba(250, 153, 80, 0.8); }
       .header-big .my-nav .navbar-nav .active {
+        background-color: #fa9950;
         background-color: rgba(250, 153, 80, 0.8); }
         .header-big .my-nav .navbar-nav .active a {
           color: #ffffff; }
@@ -166,8 +172,10 @@
         color: #000;
         transition: all 0.3s ease-in; }
         .header-sm .my-nav .navbar-nav a:hover {
+          color: #fa9950;
           color: rgba(250, 153, 80, 0.8); }
       .header-sm .my-nav .navbar-nav .active {
+        background-color: #fa9950;
         background-color: rgba(250, 153, 80, 0.8); }
         .header-sm .my-nav .navbar-nav .active a {
           color: #ffffff; }
@@ -216,6 +224,7 @@
       max-height: 60vh;
       border: none; }
       .home-body-container .home-notice-board .card .card-header {
+        background: #fa9950;
         background: rgba(250, 153, 80, 0.8);
         color: #ffffff;
         text-align: center;
@@ -286,10 +295,12 @@
   border-top: none;
   border-right: 15px solid transparent;
   border-left: 15px solid transparent;
+  border-bottom: 15px solid #fa9950;
   border-bottom: 15px solid rgba(250, 153, 80, 0.8); }
 
 #back-to-top {
   display: inline-block;
+  background: #fa9950;
   background: rgba(250, 153, 80, 0.8);
   width: 50px;
   height: 50px;
@@ -372,6 +383,7 @@
   justify-content: center; }
   .header-sm .menu.show {
     width: 60%;
+    border-left: 4px solid #fa9950;
     border-left: 4px solid rgba(250, 153, 80, 0.8); }
   .header-sm .menu .close-btn {
     color: #000;
@@ -390,6 +402,7 @@
     .header-sm .menu .nav-item0.show {
       transform: translate3d(0, 0, 0); }
     .header-sm .menu .nav-item0.active > a {
+      color: #fa9950;
       color: rgba(250, 153, 80, 0.8);
       font-weight: 400; }
     .header-sm .menu .nav-item0:nth-child(5) {
@@ -414,6 +427,7 @@
     text-decoration: none;
     transition: all 0.3s ease-in; }
     .header-sm .menu .nav-link0:hover {
+      color: #fa9950;
       color: rgba(250, 153, 80, 0.8); }
     .header-sm .menu .nav-link0.dark-btn {
       font-size: 1.1rem;
@@ -427,6 +441,7 @@
       font-weight: 800;
       text-transform: none;
       padding: 0.8rem;
+      color: #fa9950;
       color: rgba(250, 153, 80, 0.8);
       width: 80%; }
   .header-sm .menu .nav-item0:nth-child(6) {
@@ -518,7 +533,9 @@
       .institute-body-container .home-img .overlay .ext-link {
         z-index: 100;
         background: #ffffff73;
+        border: 2px solid #fa9950;
         border: 2px solid rgba(250, 153, 80, 0.8);
+        color: #fa9950;
         color: rgba(250, 153, 80, 0.8);
         text-decoration: none;
         width: 30%;
@@ -537,6 +554,7 @@
   border-top: none;
   border-right: 15px solid transparent;
   border-left: 15px solid transparent;
+  border-bottom: 15px solid #fa9950;
   border-bottom: 15px solid rgba(250, 153, 80, 0.8); }
 
 .department-body-container {
@@ -577,6 +595,7 @@
           content: "";
           transition: all 0.5s ease-in-out;
           position: absolute;
+          background-color: #fa9950;
           background-color: rgba(250, 153, 80, 0.8);
           width: 4px;
           height: 10px; }
@@ -631,6 +650,7 @@
     .department-body-container .dep-detail ul li {
       position: relative;
       background: #ffffff;
+      border-left: 4px solid #fa9950;
       border-left: 4px solid rgba(250, 153, 80, 0.8);
       padding: 20px;
       padding-top: 10px;
@@ -702,6 +722,7 @@
   border-top: none;
   border-right: 15px solid transparent;
   border-left: 15px solid transparent;
+  border-bottom: 15px solid #fa9950;
   border-bottom: 15px solid rgba(250, 153, 80, 0.8); }
 
 .contact-body {
@@ -721,6 +742,7 @@
       background-color: #f6f6fd;
       box-shadow: 0 1px 20px -8px rgba(0, 0, 0, 0.41);
       border-radius: 8px;
+      border-left: 4px solid #fa9950;
       border-left: 4px solid rgba(250, 153, 80, 0.8);
       text-align: justify;
       max-height: 100%;
@@ -858,6 +880,7 @@
     border: 0.5px solid #ccc;
     perspective: 1000px; }
     .register-card .card .head {
+      background: #fa9950;
       background: rgba(250, 153, 80, 0.8);
       color: #ffffff;
       font-family: 'Lato', sans-serif;
@@ -883,6 +906,7 @@
         background: rgba(0, 0, 0, 0.2); }
         .register-card .card .progress span.is-active {
           background: rgba(0, 0, 0, 0.4);
+          background: #fa9950;
           background: rgba(250, 153, 80, 0.8); }
     .register-card .card .card-bodies {
       position: relative;
@@ -971,6 +995,7 @@
           font-weight: 500;
           font-size: 1.5rem;
           margin-top: 1.0rem;
+          color: #fa9950;
           color: rgba(250, 153, 80, 0.8); }
         .register-card .card .card-bodies .card-body .form-img {
           display: flex;
@@ -1086,6 +1111,7 @@ form {
             color: #000;
             padding: 0.6rem 0.8rem; }
             #login-body .wrap .signin form .form-input input:focus {
+              border: 1px solid #fa9950;
               border: 1px solid rgba(250, 153, 80, 0.8);
               background: #ffffff; }
         #login-body .wrap .signin form .dark-btn {

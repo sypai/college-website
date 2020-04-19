@@ -50,6 +50,7 @@
                         content: "";
                         @include transition;
                         position: absolute;
+                        background-color: $color-4-alt;
                         background-color: $color-4;
                         width: 4px;
                         height: 10px;
@@ -134,6 +135,7 @@
             li{
                 position: relative;
                 background: $color-2;
+                border-left: 4px solid $color-4-alt;
                 border-left: 4px solid $color-4;
                 padding: 20px;
                 padding-top: 10px;
@@ -237,5 +239,6 @@
     border-top: none;
     border-right: 15px solid transparent;
     border-left: 15px solid transparent;
+    border-bottom: 15px solid $color-4-alt;
     border-bottom: 15px solid $color-4;
   }

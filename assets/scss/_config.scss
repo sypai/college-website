@@ -8,6 +8,7 @@ $color-1: #f6f6fd;
 $color-2: #ffffff;
 $color-3: #000;
 // $color-4: #fa9950cc; //8-digit not supported
+$color-4-alt: #fa9950;
 $color-4:rgba(250, 153, 80, 0.8); 
 $color-5: #f30000;
 $color-6: #0f3fca;
@@ -58,6 +59,7 @@ $black: rgba(48, 69, 92, 0.8);
 }
 
 .dark-btn {
+  background: $color-4-alt;
   background: $color-4;
   color: $color-2;
 
@@ -86,10 +88,12 @@ $black: rgba(48, 69, 92, 0.8);
 
 .light-btn {
   background: $color-2;
+  color: $color-4-alt;
   color: $color-4;
 
   width: 200px;
   border-radius: 0.5rem;
+  border: 2px solid $color-4-alt;
   border: 2px solid $color-4;
   margin-bottom: 1rem;
   padding: 0.8rem 1rem;
@@ -106,6 +110,7 @@ $black: rgba(48, 69, 92, 0.8);
 
   &:hover {
     transform: translate(0px, -5px);
+    color: $color-4-alt;
     color: $color-4;
     text-decoration: none;
   }

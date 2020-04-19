@@ -123,6 +123,7 @@
 
         .head{
             // display: none;
+            background: $color-4-alt;
             background: $color-4;
             color: $color-2;
             font-family: 'Lato', sans-serif;
@@ -152,6 +153,7 @@
     
                 &.is-active{
                     background: rgba(0,0,0,0.4);
+                    background: $color-4-alt;
                     background: $color-4;
                 }
             }
@@ -280,6 +282,7 @@
                     font-weight: 500;
                     font-size: 1.5rem;
                     margin-top: 1.0rem;
+                    color: $color-4-alt;
                     color: $color-4;
                 }
 

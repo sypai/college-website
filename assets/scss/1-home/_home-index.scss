@@ -68,11 +68,13 @@
                 @include easeOut;
     
                 &:hover{
+                    color: $color-4-alt;
                     color: $color-4;
                 }
             }
     
             .active{
+                background-color: $color-4-alt;
                 background-color: $color-4;
                 
                 a{
@@ -158,11 +160,13 @@
                 @include easeOut;
     
                 &:hover{
+                    color: $color-4-alt;
                     color: $color-4;
                 }
             }
     
             .active{
+                background-color: $color-4-alt;
                 background-color: $color-4;
                 
                 a{
@@ -237,6 +241,7 @@
             border: none;
             
             .card-header{
+                background: $color-4-alt;
                 background: $color-4;
                 color: $color-2;
                 text-align: center;
@@ -337,11 +342,13 @@
     border-top: none;
     border-right: 15px solid transparent;
     border-left: 15px solid transparent;
+    border-bottom: 15px solid $color-4-alt;
     border-bottom: 15px solid $color-4;
   }
 
 #back-to-top{
     display: inline-block;
+    background: $color-4-alt;
     background: $color-4;
     width: 50px;
     height: 50px;
@@ -449,6 +456,7 @@
 
         &.show{
             width: 60%;
+            border-left: 4px solid $color-4-alt ;
             border-left: 4px solid $color-4 ;
         }
 
@@ -476,6 +484,7 @@
             }
 
             &.active > a{
+                color: $color-4-alt;
                 color: $color-4;
                 font-weight: 400;
             }
@@ -514,6 +523,7 @@
             @include easeOut;
 
             &:hover{
+                color: $color-4-alt;
                 color: $color-4;
             }
 
@@ -531,6 +541,7 @@
                 font-weight: 800;
                 text-transform: none;
                 padding: 0.8rem;
+                color: $color-4-alt;
                 color: $color-4;
                 width: 80%;
             }

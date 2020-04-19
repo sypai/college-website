@@ -316,9 +316,18 @@
                 }
             }
         }
-        
+    }   
+
+    #careerMap{
+        margin-top: 60px;
+        margin-bottom: 120px;
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
 }
+
 
 .home-body-container.arrow-top:after {
     content: " ";

@@ -315,7 +315,7 @@
   z-index: 1000; }
   #back-to-top::after {
     content: "\f077";
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     font-weight: normal;
     font-style: normal;
     font-size: 2em;
@@ -1205,6 +1205,112 @@ form {
       margin-right: 5rem;
       width: 20vw;
       height: 45vh; }
+
+.student-nav {
+  margin-top: 160px;
+  padding: 0; }
+  .student-nav .navbar-nav {
+    flex-direction: row; }
+    .student-nav .navbar-nav a {
+      padding: 1rem;
+      padding-right: 6px;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.0rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #000;
+      transition: all 0.3s ease-in; }
+      .student-nav .navbar-nav a:hover {
+        color: #fa9950;
+        color: rgba(250, 153, 80, 0.8); }
+      .student-nav .navbar-nav a i {
+        font-size: 1.3rem; }
+    .student-nav .navbar-nav .bc {
+      padding-left: 0;
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      color: #976307; }
+      .student-nav .navbar-nav .bc .bc-arrow {
+        color: #000;
+        margin-right: 6px; }
+
+.dashboard-body-container .dash-area {
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem; }
+  .dashboard-body-container .dash-area .dash-sections {
+    margin-bottom: 1.2rem; }
+    .dashboard-body-container .dash-area .dash-sections .card {
+      border: none;
+      min-height: 150px;
+      transition: all 250ms ease-in; }
+      .dashboard-body-container .dash-area .dash-sections .card:hover {
+        box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.2);
+        -webkit-transform: translate(0px, -8px);
+        -ms-transform: translate(0px, -8px);
+        transform: translate(0px, -8px); }
+      .dashboard-body-container .dash-area .dash-sections .card .open-section {
+        background: #fff;
+        padding: 0.5rem; }
+      .dashboard-body-container .dash-area .dash-sections .card .open {
+        color: #000;
+        transition: all 300ms ease-out;
+        text-decoration: none; }
+      .dashboard-body-container .dash-area .dash-sections .card .open:hover {
+        border-bottom: 2px solid #fa9950;
+        color: #fa9950;
+        text-decoration: none; }
+      .dashboard-body-container .dash-area .dash-sections .card .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem; }
+        .dashboard-body-container .dash-area .dash-sections .card .card-body .card-name {
+          margin-bottom: 1rem; }
+        .dashboard-body-container .dash-area .dash-sections .card .card-body .section-icons {
+          width: 70px;
+          height: 70px; }
+
+.session-container {
+  margin-bottom: 2rem; }
+  .session-container .session-body {
+    margin-top: 2.5rem;
+    padding: 15px; }
+    .session-container .session-body .session-info {
+      background: #ffffff;
+      box-shadow: 0 1px 20px -8px rgba(0, 0, 0, 0.41);
+      font-family: 'Lato', sans-serif;
+      font-size: 1.1rem;
+      padding: 1.2rem;
+      margin-bottom: 2.5rem;
+      max-height: 150px; }
+      .session-container .session-body .session-info .sess-info-1 {
+        color: #976307; }
+    .session-container .session-body .inside-session {
+      padding: 0; }
+      .session-container .session-body .inside-session .inside-session-items {
+        background: #ffffff;
+        box-shadow: 0 1px 20px -8px rgba(0, 0, 0, 0.41);
+        font-family: 'Lato', sans-serif;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        transition: all 250ms ease-in; }
+        .session-container .session-body .inside-session .inside-session-items:hover {
+          box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.2);
+          -webkit-transform: translate(0px, -8px);
+          -ms-transform: translate(0px, -8px);
+          transform: translate(0px, -8px); }
+        .session-container .session-body .inside-session .inside-session-items .sess-item-links {
+          transition: all 0.3s ease-in; }
+          .session-container .session-body .inside-session .inside-session-items .sess-item-links:hover {
+            color: #fa9950;
+            color: rgba(250, 153, 80, 0.8); }
 
 * {
   box-sizing: border-box; }
